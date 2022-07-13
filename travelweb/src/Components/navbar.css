@@ -1,0 +1,25 @@
+.search{
+  margin-left:20px;
+  margin-top:4px
+}
+.centered{
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+letter-spacing: 2px;
+font-size: 60px;
+display:flex;
+font-weight:bolder;
+visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: fadeInDown;
+    font-family: inherit;
+}
+
+.a:hover{
+  color:white;
+  background-color: #00b2ca;
+}

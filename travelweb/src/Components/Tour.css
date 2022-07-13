@@ -1,0 +1,38 @@
+.search{
+    margin-left:20px;
+    margin-top:4px
+  }
+  .centered{
+      position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+  letter-spacing: 2px;
+  font-size: 40px;
+  display:flex;
+  font-weight:bolder;
+  visibility: visible;
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      animation-name: fadeInDown;
+      font-family: inherit;
+  }
+  
+  .a:hover{
+    color:white;
+    background-color: #00b2ca;
+  }
+  .logo{
+     
+     
+  }
+  .contain{
+    display:flex;
+    margin:10px;
+    padding:20px;
+       justify-content:flex-end;
+    align-items: center;
+    margin-top:40px;
+    
+  }
