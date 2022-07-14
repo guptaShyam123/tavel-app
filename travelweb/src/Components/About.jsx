@@ -501,7 +501,7 @@ const About = () => {
 
           <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
             <CardActionArea>
-              <CardMedia style={{ width: '450px' }}
+              <CardMedia  style={{ width: '450px' }}
                 component="img"
                 height="200"
 

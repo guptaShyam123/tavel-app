@@ -323,6 +323,18 @@ const Contactus = () => {
 
   const [Enquires, setEnquires] = useState('')
 
+ 
+
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [openone, setOpenone] = React.useState(false);
+  const handleOpenone = () => setOpenone(true);
+  const handleCloseone = () => setOpenone(false);
+  const handleOpenones = () => setOpenone(false)
+
+
   const Postdata = async (e) => {
 
     e.preventDefault()
@@ -338,18 +350,9 @@ const Contactus = () => {
     );
 
     console.log(data)
-
+    alert("Enquire Request Sent")
+ setOpen(false)
   }
-
-
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const [openone, setOpenone] = React.useState(false);
-  const handleOpenone = () => setOpenone(true);
-  const handleCloseone = () => setOpenone(false);
-  const handleOpenones = () => setOpenone(false)
-
 
   return (
     <>

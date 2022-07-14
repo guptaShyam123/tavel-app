@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/system";
 import { AppBar } from "@mui/material";
@@ -12,6 +12,7 @@ import Modal from '@mui/material/Modal';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import axios from 'axios'
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import im from '../Images/osm.png'
@@ -59,13 +60,17 @@ const Stylepara = styled("div")(({ theme }) => ({
 
 }))
 
+const Stylebot = styled("div")(({ theme }) => ({
+   marginTop:'-29px'
+}))
+
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 670,
-  height: 685,
+  height: 700,
 
   border: '1px solid #000',
 
@@ -79,6 +84,30 @@ const style = {
 };
 
 const Contactus = () => {
+
+  
+  const [email, setEmail] = useState('')
+  const [password , setPassword] = useState('')
+
+
+  const postdatas = async (e) => {
+
+    e.preventDefault()
+    const {data} = await axios.post("http://localhost:4000/api/v1/logins1", {
+      email, password,
+    },
+      {
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+
+    );
+
+    console.log(data)
+
+  }
+
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -121,42 +150,45 @@ const Contactus = () => {
                       </AccordionSummary>
                     </div>
                     <AccordionDetails>
+                    
+<Stylebot>
                       <Typography style={{ color: 'black', fontWeight: 'bolder' }} id="modal-modal-title" variant="h6" component="h2">
 
 
-
-
+            <form onSubmit={postdatas}>
                         <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Email Address</label>
-                            <input style={{ width: '13vw', height: '32px' }} type="text" />
+                            <input  onChange={(e) => setEmail(e.target.value)} style={{ width: '10vw', height: '32px' }} type="email" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label>password</label>
-                            <input style={{ width: '13vw', height: '32px', }} type="text" />
+                            <input  onChange={(e) => setPassword(e.target.value)} style={{ width: '10vw', height: '32px', }} type="password" />
                           </div>
                           <div style={{ marginTop: '40px', display: 'grid', marginLeft: '10px' }}>
 
-                            <Button sx={{ boxShadow: 4, width: '13vw', borderRadius: '10px', backgroundColor: '#f44336', color: 'white', fontWeight: 'bolder' }}>LOGIN</Button>
+                            <button  type="submit" sx={{ boxShadow: 4, width: '13vw', borderRadius: '10px', backgroundColor: '#f44336', color: 'white', fontWeight: 'bolder' }}>LOGIN</button>
 
                           </div>
 
                         </div>
-
+                        </form>
+                        <p style={{fontSize:'15px'}}>You can register here</p>
                         <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
 
+                         
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Name</label>
-                            <input style={{ width: '13vw', height: '32px' }} type="text" />
+                            <input style={{ width: '10vw', height: '32px' }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Last Name</label>
-                            <input style={{ width: '13vw', height: '32px', }} type="text" />
+                            <label>password</label>
+                            <input style={{ width: '10vw', height: '32px', }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Fullname</label>
-                            <input style={{ width: '13vw', height: '32px', }} type="text" />
+                            <label>Email</label>
+                            <input style={{ width: '10vw', height: '32px', }} type="text" />
                           </div>
 
                         </div>
@@ -164,15 +196,15 @@ const Contactus = () => {
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Zip/Post</label>
-                            <input style={{ width: '13vw', height: '32px' }} type="text" />
+                            <input style={{ width: '10vw', height: '32px' }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label>Company Name</label>
-                            <input style={{ width: '13vw', height: '32px', }} type="text" />
+                            <input style={{ width: '10vw', height: '32px', }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label>City</label>
-                            <select style={{ width: '13vw', height: '36px' }} name="cars" id="cars">
+                            <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
                               <option value="volvo">Rajasthan</option>
                               <option value="saab">Saab</option>
                               <option value="mercedes">Mercedes</option>
@@ -184,7 +216,7 @@ const Contactus = () => {
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Travel Network</label>
-                            <select style={{ width: '13vw', height: '36px' }} name="cars" id="cars">
+                            <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
                               <option value="volvo">Asia</option>
                               <option value="saab">Saab</option>
                               <option value="mercedes">Mercedes</option>
@@ -195,7 +227,7 @@ const Contactus = () => {
 
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label>Travel Agency</label>
-                            <input style={{ width: '19vw', height: '32px', }} type="text" />
+                            <input style={{ width: '17vw', height: '32px', }} type="text" />
 
                           </div>
                         </div>
@@ -205,11 +237,11 @@ const Contactus = () => {
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Address</label>
-                            <input style={{ width: '20vw', height: '32px' }} type="text" />
+                            <input style={{ width: '17vw', height: '32px' }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>State/Province</label>
-                            <input style={{ width: '13vw', height: '32px', }} type="text" />
+                            <label>State</label>
+                            <input style={{ width: '10vw', height: '32px', }} type="text" />
                           </div>
                         </div>
 
@@ -217,19 +249,14 @@ const Contactus = () => {
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
                             <label>Telephone</label>
-                            <input style={{ width: '13vw', height: '32px' }} type="text" />
+                            <input style={{ width: '10vw', height: '32px' }} type="text" />
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label></label>Company Website
-                            <input style={{ width: '20vw', height: '32px', }} type="text" />
+                            <input style={{ width: '17vw', height: '32px', }} type="text" />
                           </div>
                         </div>
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Telephone No.</label>
-                            <input style={{ width: '20vw', height: '32px', }} type="text" />
-                          </div>
-                        </div>
+                       
                         <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <Button sx={{ boxShadow: 4, width: '20vw', backgroundImage: 'linear-gradient(160deg, rgb(0, 147, 233) 0%, rgb(128, 208, 199) 100%)', color: 'white', fontWeight: 'bolder' }}>Submit</Button>
@@ -238,6 +265,7 @@ const Contactus = () => {
 
 
                       </Typography>
+                      </Stylebot>
                     </AccordionDetails>
                   </Accordion>
 
