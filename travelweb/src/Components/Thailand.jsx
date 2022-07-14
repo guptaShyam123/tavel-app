@@ -304,7 +304,7 @@ const Thailand = () => {
     <>
     <Styleim>
   <center> 
-  <img src="https://www.exotravel.com/assets/img/top-page/icon-tour.png" />
+  <img src="https://www.exotravel.com/assets/content/destinations/images/flag-thailand.png" />
    </center>
     </Styleim>
 
@@ -319,7 +319,7 @@ const Thailand = () => {
   }}></hr>
     </Stylepara>
     <Styleparao>
-    <p>Vietnam lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
+    <p>Thailand lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
     </Styleparao>
     <Stylebutt>
 <center><Button variant="contained" sx={{boxShadow:4 , backgroundColor:'#097dd5' , color:'white' , fontWeight:'bolder'}}>Watch Video</Button></center>
@@ -416,7 +416,7 @@ const Thailand = () => {
    <h1>WEATHER HERE</h1>
    </Stylenew1>
    <Stylenew2>
-   <p>Vietnam's weather ranges from a familiar four-season system in the north to eternal summer in the south. Because of regional variation, there are pleasant places to visit in Vietnam throughout the year. 
+   <p>Thailand's weather ranges from a familiar four-season system in the north to eternal summer in the south. Because of regional variation, there are pleasant places to visit in Vietnam throughout the year. 
    </p>
    </Stylenew2>
    <Stylenew3>

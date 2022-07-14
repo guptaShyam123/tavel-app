@@ -68,6 +68,7 @@ const Styleimo = styled("div")(({ theme }) => ({
       height: '200px',
       width: '100px',
       
+      
     },
     [theme.breakpoints.down("md")]: {
   
@@ -304,7 +305,7 @@ const myanmar = () => {
     <>
     <Styleim>
   <center> 
-  <img src="https://www.exotravel.com/assets/img/top-page/icon-tour.png" />
+  <img src="https://www.exotravel.com/assets/content/destinations/images/flag-myanmar.png" />
    </center>
     </Styleim>
 
@@ -319,7 +320,7 @@ const myanmar = () => {
   }}></hr>
     </Stylepara>
     <Styleparao>
-    <p>Vietnam lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
+    <p>Myanmar lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
     </Styleparao>
     <Stylebutt>
 <center><Button variant="contained" sx={{boxShadow:4 , backgroundColor:'#097dd5' , color:'white' , fontWeight:'bolder'}}>Watch Video</Button></center>
@@ -339,7 +340,7 @@ const myanmar = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
-        VIETNAM
+        MYANMAR
           </Typography>
 
         </CardContent>
@@ -357,7 +358,7 @@ const myanmar = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
-            CAMBODIA
+            MYANMAR
           </Typography>
 
         </CardContent>
@@ -376,7 +377,7 @@ const myanmar = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
-            NATURE
+            MYANMAR
           </Typography>
 
         </CardContent>
@@ -399,11 +400,11 @@ const myanmar = () => {
    <p>Whether you're looking for a sublime beachside resort, remote boutique getaway or anything in between, we've found the very best accomodation to suit your needs and included them in our list of preferred best Hotels in Vietnam.</p>
   
    <Styleimgs>
-     <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cmVzb3J0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
+     <img src="https://images.unsplash.com/photo-1612258000416-4954d59f98c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQwfHxteWFubWFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
 
-     <img src="https://images.unsplash.com/photo-1625244695851-1fc873f942bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+     <img src="https://images.unsplash.com/photo-1550310035-0a2dfcc82527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUzfHxteWFubWFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
 
-     <img src="https://images.unsplash.com/photo-1516117505817-8f26dd5d1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEwfHxmb3Jlc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"/>
+     <img src="https://images.unsplash.com/photo-1605198427337-8b2059682a47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQwfHxteWFubWFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"/>
    </Styleimgs>
    <Styleop>
    <center><Button variant="contained" sx={{boxShadow:4 , backgroundColor:'#097dd5' , color:'white' , fontWeight:'bolder'}}>View More</Button></center>

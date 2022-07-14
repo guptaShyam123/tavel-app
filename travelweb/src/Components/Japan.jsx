@@ -304,7 +304,7 @@ const japan = () => {
     <>
     <Styleim>
   <center> 
-  <img src="https://www.exotravel.com/assets/img/top-page/icon-tour.png" />
+  <img src="https://www.exotravel.com/assets/content/destinations/images/flag-japan.png" />
    </center>
     </Styleim>
 
@@ -319,7 +319,7 @@ const japan = () => {
   }}></hr>
     </Stylepara>
     <Styleparao>
-    <p>Vietnam lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
+    <p>Japan lends itself well to epics. Snaking sinuously down from the Chinese border to the Gulf of Thailand, its bounty of towering peaks, emerald green paddies, seemingly endless white sand beaches and deep roots in the past offer enough mystic allure to satiate the thirsts of any traveller.</p>
     </Styleparao>
     <Stylebutt>
 <center><Button variant="contained" sx={{boxShadow:4 , backgroundColor:'#097dd5' , color:'white' , fontWeight:'bolder'}}>Watch Video</Button></center>
@@ -339,7 +339,7 @@ const japan = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
-        VIETNAM
+        japan
           </Typography>
 
         </CardContent>
