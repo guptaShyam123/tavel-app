@@ -384,7 +384,7 @@ const Home = () => {
 
           />
 
-
+                
         </Imglists>
 
         <center><StyledButton>

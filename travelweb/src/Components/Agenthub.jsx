@@ -204,23 +204,20 @@ const Contactus = () => {
                           </div>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                             <label>City</label>
-                            <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
-                              <option value="volvo">Rajasthan</option>
-                              <option value="saab">Saab</option>
-                              <option value="mercedes">Mercedes</option>
-                              <option value="audi">Audi</option>
-                            </select>
+                           
+                             <input style={{ width: '10vw', height: '32px', }} type="text" />
                           </div>
                         </div>
                         <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
 
                           <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Travel Network</label>
+                            <label>Country</label>
                             <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
                               <option value="volvo">Asia</option>
-                              <option value="saab">Saab</option>
-                              <option value="mercedes">Mercedes</option>
-                              <option value="audi">Audi</option>
+                              <option value="saab">Japan</option>
+                              <option value="mercedes">Vietnam</option>
+                              <option value="audi">Indonasia</option>
+                              <option value="audi">Thailand</option>
                             </select>
 
                           </div>
@@ -245,17 +242,7 @@ const Contactus = () => {
                           </div>
                         </div>
 
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Telephone</label>
-                            <input style={{ width: '10vw', height: '32px' }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label></label>Company Website
-                            <input style={{ width: '17vw', height: '32px', }} type="text" />
-                          </div>
-                        </div>
+                       
                        
                         <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
                           <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
