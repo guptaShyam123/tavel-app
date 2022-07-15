@@ -128,141 +128,144 @@ const Contactus = () => {
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>EVENTS</button>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>RESPONSIBLE</button>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>BLOG</button>
-            <button onClick={handleOpen} style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: 'green' }}>ENQUIRE</button>
-            <Modal
-              open={open}
-              onClose={handleClose}
-              aria-labelledby="modal-modal-title"
-              aria-describedby="modal-modal-description"
-            >
-              <Box sx={style}>
-
-
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  <Accordion sx={{ boxShadow: 'none', }}>
-                    <div style={{}}>
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography style={{ color: 'black', fontWeight: 'bolder', fontFamily: 'revert-layer' }}>Please login to access the full Agent Hub</Typography>
-                      </AccordionSummary>
-                    </div>
-                    <AccordionDetails>
-                    
-<Stylebot>
-                      <Typography style={{ color: 'black', fontWeight: 'bolder' }} id="modal-modal-title" variant="h6" component="h2">
-
-
-            <form onSubmit={postdatas}>
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Email Address</label>
-                            <input  onChange={(e) => setEmail(e.target.value)} style={{ width: '10vw', height: '32px' }} type="email" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>password</label>
-                            <input  onChange={(e) => setPassword(e.target.value)} style={{ width: '10vw', height: '32px', }} type="password" />
-                          </div>
-                          <div style={{ marginTop: '40px', display: 'grid', marginLeft: '10px' }}>
-
-                            <button  type="submit" sx={{ boxShadow: 4, width: '13vw', borderRadius: '10px', backgroundColor: '#f44336', color: 'white', fontWeight: 'bolder' }}>LOGIN</button>
-
-                          </div>
-
-                        </div>
-                        </form>
-                        <p style={{fontSize:'15px'}}>You can register here</p>
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                         
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Name</label>
-                            <input style={{ width: '10vw', height: '32px' }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>password</label>
-                            <input style={{ width: '10vw', height: '32px', }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Email</label>
-                            <input style={{ width: '10vw', height: '32px', }} type="text" />
-                          </div>
-
-                        </div>
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Zip/Post</label>
-                            <input style={{ width: '10vw', height: '32px' }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Company Name</label>
-                            <input style={{ width: '10vw', height: '32px', }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>City</label>
-                           
-                             <input style={{ width: '10vw', height: '32px', }} type="text" />
-                          </div>
-                        </div>
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Country</label>
-                            <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
-                              <option value="volvo">Asia</option>
-                              <option value="saab">Japan</option>
-                              <option value="mercedes">Vietnam</option>
-                              <option value="audi">Indonasia</option>
-                              <option value="audi">Thailand</option>
-                            </select>
-
-                          </div>
-
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>Travel Agency</label>
-                            <input style={{ width: '17vw', height: '32px', }} type="text" />
-
-                          </div>
-                        </div>
-
-
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                          <div style={{ marginTop: '20px', display: 'grid' }}>
-                            <label>Address</label>
-                            <input style={{ width: '17vw', height: '32px' }} type="text" />
-                          </div>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <label>State</label>
-                            <input style={{ width: '10vw', height: '32px', }} type="text" />
-                          </div>
-                        </div>
-
-                       
-                       
-                        <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-                          <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                            <Button sx={{ boxShadow: 4, width: '20vw', backgroundImage: 'linear-gradient(160deg, rgb(0, 147, 233) 0%, rgb(128, 208, 199) 100%)', color: 'white', fontWeight: 'bolder' }}>Submit</Button>
-                          </div>
-                        </div>
-
-
-                      </Typography>
-                      </Stylebot>
-                    </AccordionDetails>
-                  </Accordion>
-
-                </Typography>
-              </Box>
-            </Modal>
+            <button  style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: 'green' }}>ENQUIRE</button>
+            
 
             <SearchIcon className='search' />
+           
             <button onClick={handleOpen} className="a" style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: '', width: '120px' }}>AGENT HUB</button>
-          </Stylepara>
+            <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+
+
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <Accordion sx={{ boxShadow: 'none', }}>
+                  <div style={{}}>
+                    <center><AccordionSummary 
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography style={{ color: 'black', fontWeight: 'bolder', fontFamily: 'revert-layer' ,  }}>Please login to access the full Agent Hub</Typography>
+                    </AccordionSummary>
+                    </center>
+                  </div>
+                  <AccordionDetails>
+                        
+<Stylebot>
+                    <Typography style={{ color: 'black', fontWeight: 'bolder' }} id="modal-modal-title" variant="h6" component="h2">
+
+
+          <form onSubmit={postdatas}>
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+
+                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                          <label>Email Address</label>
+                          <input  onChange={(e) => setEmail(e.target.value)} style={{ width: '10vw', height: '32px' }} type="email" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>password</label>
+                          <input  onChange={(e) => setPassword(e.target.value)} style={{ width: '10vw', height: '32px', }} type="password" />
+                        </div>
+                        <div style={{ marginTop: '40px', display: 'grid', marginLeft: '10px' }}>
+
+                          <button  type="submit" sx={{ boxShadow: 4, width: '13vw', borderRadius: '10px', backgroundColor: '#f44336', color: 'white', fontWeight: 'bolder' }}>LOGIN</button>
+
+                        </div>
+
+                      </div>
+                      </form>
+                      <center><p style={{fontSize:'15px'}}>You can register here</p></center>
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+
+                       
+                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                          <label>Name</label>
+                          <input style={{ width: '10vw', height: '32px' }} type="text" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>password</label>
+                          <input style={{ width: '10vw', height: '32px', }} type="text" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>Email</label>
+                          <input style={{ width: '10vw', height: '32px', }} type="text" />
+                        </div>
+
+                      </div>
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+
+                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                          <label>Zip/Post</label>
+                          <input style={{ width: '10vw', height: '32px' }} type="text" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>Company Name</label>
+                          <input style={{ width: '10vw', height: '32px', }} type="text" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>City</label>
+                         
+                           <input style={{ width: '10vw', height: '32px', }} type="text" />
+                        </div>
+                      </div>
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+
+                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                          <label>Country</label>
+                          <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
+                            <option value="volvo">Asia</option>
+                            <option value="saab">Japan</option>
+                            <option value="mercedes">Vietnam</option>
+                            <option value="audi">Indonasia</option>
+                            <option value="audi">Thailand</option>
+                          </select>
+
+                        </div>
+
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>Travel Agency</label>
+                          <input style={{ width: '17vw', height: '32px', }} type="text" />
+
+                        </div>
+                      </div>
+
+
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+
+                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                          <label>Address</label>
+                          <input style={{ width: '17vw', height: '32px' }} type="text" />
+                        </div>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <label>State</label>
+                          <input style={{ width: '10vw', height: '32px', }} type="text" />
+                        </div>
+                      </div>
+
+                     
+                     
+                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <Button sx={{ boxShadow: 4, width: '20vw', backgroundImage: 'linear-gradient(160deg, rgb(0, 147, 233) 0%, rgb(128, 208, 199) 100%)', color: 'white', fontWeight: 'bolder' }}>Submit</Button>
+                        </div>
+                      </div>
+
+                           
+                    </Typography>
+                    </Stylebot>
+                  </AccordionDetails>
+                </Accordion>
+
+              </Typography>
+            </Box>
+          </Modal>
+            </Stylepara>
           <SearchIcon />
         </StyleLink>
 

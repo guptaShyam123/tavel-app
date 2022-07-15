@@ -13,12 +13,13 @@ import Contactus from './Components/Contactus'
 import Japan from './Components/Japan'
 import Myanmar from './Components/Myanmar'
 import Thailand from './Components/Thailand'
+import Footer from './Components/Footer'
 const App = () => {
   return (
     <>
    
 
-    <Agenthub/>
+    <Footer/>
 
 
     </>
