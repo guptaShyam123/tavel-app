@@ -399,7 +399,7 @@ const Home = () => {
 
         <Styleinp style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px' }}>
           <input type="text" placeholder='Enter Your Email' />
-
+            
         </Styleinp>
 
       </StyleLiss>

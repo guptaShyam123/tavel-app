@@ -69,8 +69,8 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 670,
-  height: 700,
+  width: 680,
+  height: 600,
 
   border: '1px solid #000',
 
@@ -108,6 +108,292 @@ const Contactus = () => {
 
   }
 
+  
+const Stylell = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+      height:'30px'
+    }
+
+  }
+}))
+
+const Stylello = styled("div")(({ theme }) => ({
+
+
+  marginTop: '20px', display: 'grid', marginLeft: '10px',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+  [theme.breakpoints.down("md")]: {
+    ' & input': {
+      margin: '0 auto',
+      width: '200px',
+      marginLeft: '-8px',
+      height:'30px'
+
+    },
+
+
+
+
+
+  }
+
+}))
+
+const Styleppt = styled("div")(({ theme }) => ({
+
+  marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center',
+
+
+  [theme.breakpoints.down("md")]: {
+    display: 'grid',
+
+    ' & input': {
+      width: '200px',
+
+    }
+  }
+
+
+
+
+  }))
+
+  
+const Stylelll = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+      height:'30px'
+    }
+
+  }
+}))
+
+
+const Stylelloo = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',
+  marginLeft:'10px',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+      height:'30px'
+    }
+
+  }
+}))
+
+
+const Stylellp = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',marginLeft:'10px',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+      height:'30px'
+    }
+
+  }
+}))
+
+const Styleppts = styled("div")(({ theme }) => ({
+
+  marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center',
+ 
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+    display: 'grid',
+
+    ' & input': {
+      width: '200px',
+
+    }
+  }
+}))
+
+const Styleonea = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+      height:'30px'
+    }
+
+  }
+
+}))
+
+const Styletwo = styled("div")(({ theme }) => ({
+
+     
+  marginTop: '20px', display: 'grid', marginLeft: '10px',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+  [theme.breakpoints.down("md")]: {
+    ' & input': {
+      margin: '0 auto',
+      width: '200px',
+      marginLeft: '-8px',
+      height:'30px'
+
+    },
+
+
+
+
+
+  }
+
+}))
+
+const Stylethr = styled("div")(({ theme }) => ({
+
+     
+  marginTop: '20px', display: 'grid', marginLeft: '10px',
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+  [theme.breakpoints.down("md")]: {
+    ' & input': {
+      margin: '0 auto',
+      width: '200px',
+      marginLeft: '-8px',
+      height:'30px'
+
+    },
+  }
+
+
+}))
+
+const Styleone = styled("div")(({ theme }) => ({
+  marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center',
+ 
+
+  ' & input': {
+    width: '13vw', height: '32px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+    display: 'grid',
+
+    ' & input': {
+      width: '200px',
+
+    }
+  }
+
+}))
+
+
+const Stylefirts = styled("div")(({ theme }) => ({
+
+  marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center',
+  [theme.breakpoints.down("md")]: {
+    display: 'grid',
+
+  }
+
+}))
+
+const Stylesec = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid',
+
+  ' & input': {
+    width: '13vw', height: '32px', marginLeft:'10px'
+  },
+
+  [theme.breakpoints.down("md")]: {
+
+    ' & input': {
+      width: '200px',
+      margin: ' 0 auto',
+
+    }
+
+  }
+
+}))
+
+const Stylethi = styled("div")(({ theme }) => ({
+
+  marginTop: '20px', display: 'grid', marginLeft: '10px',
+
+  ' & select': {
+    width: '13vw', height: '39px'
+  },
+  [theme.breakpoints.down("md")]: {
+    ' & select': {
+      margin: '0 auto',
+      width: '200px',
+      marginLeft: '-8px'
+    }
+
+
+
+  }
+
+
+}))
+
+
+     
+  
+
+
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -133,25 +419,31 @@ const Contactus = () => {
 
             <SearchIcon className='search' />
            
+           
             <button onClick={handleOpen} className="a" style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: '', width: '120px' }}>AGENT HUB</button>
-            <Modal
+         
+            <Modal style={{height:'600px' , marginTop:'100px'}}
             open={open}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-
+        
 
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                <Accordion sx={{ boxShadow: 'none', }}>
+             
+                <Accordion sx={{ boxShadow: 'none' 
+              
+             }}>
+                
                   <div style={{}}>
                     <center><AccordionSummary 
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel1a-content"
                       id="panel1a-header"
-                    >
-                      <Typography style={{ color: 'black', fontWeight: 'bolder', fontFamily: 'revert-layer' ,  }}>Please login to access the full Agent Hub</Typography>
+                    > 
+                      <Typography sx={{ color: '#444', fontWeight: 'bolder' , fontSize:'20px'}}>Please login to access the full Agent Hub</Typography>
                     </AccordionSummary>
                     </center>
                   </div>
@@ -160,65 +452,66 @@ const Contactus = () => {
 <Stylebot>
                     <Typography style={{ color: 'black', fontWeight: 'bolder' }} id="modal-modal-title" variant="h6" component="h2">
 
-
+                    
           <form onSubmit={postdatas}>
-                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+          
+                      <Styleppt >
 
-                        <div style={{ marginTop: '20px', display: 'grid' }}>
-                          <label>Email Address</label>
-                          <input  onChange={(e) => setEmail(e.target.value)} style={{ width: '10vw', height: '32px' }} type="email" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                        <Stylell>
+                          <label> Email Address </label>
+                          <input  onChange={(e) => setEmail(e.target.value)}  type="email" />
+                        </Stylell>
+                        <Stylello >
                           <label>password</label>
-                          <input  onChange={(e) => setPassword(e.target.value)} style={{ width: '10vw', height: '32px', }} type="password" />
-                        </div>
+                          <input  onChange={(e) => setPassword(e.target.value)}  type="password" />
+                        </Stylello>
                         <div style={{ marginTop: '40px', display: 'grid', marginLeft: '10px' }}>
 
-                          <button  type="submit" sx={{ boxShadow: 4, width: '13vw', borderRadius: '10px', backgroundColor: '#f44336', color: 'white', fontWeight: 'bolder' }}>LOGIN</button>
+                          <button  type="submit" style={{  width: '13vw',  backgroundColor: '#26a69a' ,color: 'white', fontWeight: 'bolder', height:'40px' , border:'none' }}>LOGIN</button>
 
                         </div>
 
-                      </div>
+                      </Styleppt>
                       </form>
-                      <center><p style={{fontSize:'15px'}}>You can register here</p></center>
-                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+                      <center><p style={{fontSize:'20px' , color:''}}>You can register here</p></center>
+                      <Styleppts >
 
                        
-                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                        <Stylelll>
                           <label>Name</label>
-                          <input style={{ width: '10vw', height: '32px' }} type="text" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <input  type="text" />
+                        </Stylelll>
+                        <Stylelloo>
                           <label>password</label>
-                          <input style={{ width: '10vw', height: '32px', }} type="text" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <input  type="text" />
+                        </Stylelloo>
+                        <Stylellp >
                           <label>Email</label>
-                          <input style={{ width: '10vw', height: '32px', }} type="text" />
-                        </div>
+                          <input type="text" />
+                        </Stylellp>
 
-                      </div>
-                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+                      </Styleppts>
+                      <Styleone >
 
-                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                        <Styleonea >
                           <label>Zip/Post</label>
-                          <input style={{ width: '10vw', height: '32px' }} type="text" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <input  type="text" />
+                        </Styleonea>
+                        <Styletwo >
                           <label>Company Name</label>
-                          <input style={{ width: '10vw', height: '32px', }} type="text" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                          <input  type="text" />
+                        </Styletwo>
+                        <Stylethr >
                           <label>City</label>
                          
-                           <input style={{ width: '10vw', height: '32px', }} type="text" />
-                        </div>
-                      </div>
-                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
+                           <input  type="text" />
+                        </Stylethr>
+                      </Styleone>
+                      <Stylefirts >
 
-                        <div style={{ marginTop: '20px', display: 'grid' }}>
+                        <Stylethi >
                           <label>Country</label>
-                          <select style={{ width: '10vw', height: '36px' }} name="cars" id="cars">
+                          <select  name="cars" id="cars">
                             <option value="volvo">Asia</option>
                             <option value="saab">Japan</option>
                             <option value="mercedes">Vietnam</option>
@@ -226,33 +519,23 @@ const Contactus = () => {
                             <option value="audi">Thailand</option>
                           </select>
 
-                        </div>
+                        </Stylethi>
 
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
+                        <Stylesec >
                           <label>Travel Agency</label>
-                          <input style={{ width: '17vw', height: '32px', }} type="text" />
+                          <input  />
 
-                        </div>
-                      </div>
+                        </Stylesec>
+                      </Stylefirts>
 
 
-                      <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
-
-                        <div style={{ marginTop: '20px', display: 'grid' }}>
-                          <label>Address</label>
-                          <input style={{ width: '17vw', height: '32px' }} type="text" />
-                        </div>
-                        <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                          <label>State</label>
-                          <input style={{ width: '10vw', height: '32px', }} type="text" />
-                        </div>
-                      </div>
+                    
 
                      
                      
                       <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
                         <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
-                          <Button sx={{ boxShadow: 4, width: '20vw', backgroundImage: 'linear-gradient(160deg, rgb(0, 147, 233) 0%, rgb(128, 208, 199) 100%)', color: 'white', fontWeight: 'bolder' }}>Submit</Button>
+                          <Button variant="contained"  sx={{ boxShadow: 4, width: '20vw', backgroundColor: '#26a69a' ,color: 'white', fontWeight: 'bolder' }}>Submit</Button>
                         </div>
                       </div>
 
@@ -260,11 +543,15 @@ const Contactus = () => {
                     </Typography>
                     </Stylebot>
                   </AccordionDetails>
+                  
                 </Accordion>
-
+  
               </Typography>
+              
+              
             </Box>
           </Modal>
+        
             </Stylepara>
           <SearchIcon />
         </StyleLink>

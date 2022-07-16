@@ -14,12 +14,15 @@ import Japan from './Components/Japan'
 import Myanmar from './Components/Myanmar'
 import Thailand from './Components/Thailand'
 import Footer from './Components/Footer'
+import Agenthub2 from './Components/Agenthub2'
+import Youtubeclone from './Components/Youtubeclone'
+
 const App = () => {
   return (
     <>
    
 
-    <Footer/>
+    <Japan/>
 
 
     </>
