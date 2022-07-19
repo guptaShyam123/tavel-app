@@ -271,17 +271,18 @@ const StyleCardsec = styled("div")(({ theme }) => ({
 
 
   [theme.breakpoints.down("md")]: {
-    marginRight: '60px',
+    marginRight: '70px',
+    marginLef:'70px',
 
     display: 'grid',
     ' & Card ': {
       height: '100px',
       width: '100px',
-      padding: '10px',
-
+      padding: '20px',
+       
       justifyContent: 'center',
       alignItems: 'center',
-      marginRight: '-60px'
+      
     }
   }
 
@@ -329,11 +330,14 @@ const Stylepp = styled("div")(({ theme }) => ({
 
   [theme.breakpoints.down("md")]: {
 
-
-    marginTop: '20px',
+    
+    marginTop: '40px',
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: '40px'
+    marginLeft: '60px',
+    marginRight:'60px',
+    fontSize:'20px'
+     
   }
 
 
@@ -447,7 +451,7 @@ const Tour = () => {
       <Stylevv>
         <center><video style={{
 
-
+           
           width: '100%',
           height: '300px', marginTop: '100px'
         }} autoPlay loop muted>
@@ -506,14 +510,14 @@ const Tour = () => {
               <CardActions>
                 <Button style={{ backgroundColor: '#bdbfbf', color: 'white', width: '120px' }}>VIEW TOUR</Button>
 
-
+ 
                 <Stylediv>
                   <ShareIcon style={{ fontSize: '25px', marginTop: '5px' }} />
                   <p  >
                     SHARE
                   </p>
 
-                </Stylediv>
+                 </Stylediv>
 
               </CardActions>
             </Card>
@@ -546,7 +550,7 @@ const Tour = () => {
               <CardContent>
                 <p gutterBottom variant="h5" component="div">
                   18 DAYS / 17 NIGHTS
-
+                    
                 </p>
                 <hr></hr>
                 <p style={{ fontWeight: 'normal', fontSize: '20px' }}>{datas.name}</p>
@@ -556,7 +560,7 @@ const Tour = () => {
 
 
                 <Stylediv>
-                  <ShareIcon style={{ fontSize: '25px', marginTop: '5px' }} />
+                  <ShareIcon  style={{ fontSize: '25px', marginTop: '5px' }} />
                   <p  >
                     SHARE
                   </p>

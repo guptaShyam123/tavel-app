@@ -60,13 +60,16 @@ const StyleAbout = styled("div")(({ theme }) => ({
     textAlign: 'center',
     fontWeight: '500',
     fontFamily: 'myFont, Raleway, sans-serif',
-    fontSize: '30px'
+    fontSize: '30px',
+    
   },
   ' & h2': {
     fontFamily: 'Raleway, sans-serif',
-    display: 'flex', marginLeft: '13vw',
+    display: 'flex', 
     color: '#5e6163',
-    fontSize: '22px'
+    fontSize: '22px',
+    marginLeft:'300px',
+    marginRight:'300px'
   },
 
 
@@ -139,10 +142,12 @@ const Stylelogos = styled("div")(({ theme }) => ({
   },
   '& p': {
 
-    display: 'flex', marginLeft: '13vw',
+    display: 'flex', 
     fontSize: '25px',
     fontFamily: 'Railway sans-serif',
-    color: '#212121'
+    color: '#212121',
+    marginLeft:'300px',
+    marginRight:'300px'
 
   },
   [theme.breakpoints.down("md")]: {
@@ -199,7 +204,7 @@ const Stylelogos1 = styled("div")(({ theme }) => ({
   },
   '& p': {
 
-    display: 'flex', marginLeft: '13vw',
+    display: 'flex', marginLeft:'400px',marginRight:'400px',
     fontSize: '25px',
     fontFamily: 'Railway sans-serif',
     color: '#212121'
@@ -238,20 +243,25 @@ const Stylelatest = styled("div")(({ theme }) => ({
     textAlign: 'center',
     fontSize: '30px',
     fontFamily: 'Raleway , sans-serif',
-    padding: '15px'
+    padding: '10px'
   },
   ' & h3': {
-    fontWeight: 'normal',
-    fontFamily: 'Raleway , sans-serif',
-    display: 'flex', marginLeft: '13vw',
-    fontSize: '25px'
+    textAlign: 'center', justifyContent: 'center',
+   marginTop:'30px',
+   fontFamily:'Railway , sans-serif',
+   fontSize:'20px',
+   color:'gray',
+   marginLeft:'20vw',
+   marginRight:'20vw',
+   marginTop:'30px',
+   display:'flex',
 
   },
 
   [theme.breakpoints.down("md")]: {
 
     borderRadius: '20px',
-    height: '1270px',
+    height: '1310px',
 
     ' & p': {
       marginTop: '40px',
@@ -378,17 +388,20 @@ const Styleimo = styled("div")(({ theme }) => ({
 
   display: 'flex', justifyContent: 'space-evenly',
 
-
+  
   ' & img': { 
     height: '200px',
     width: '100px'
   },
   [theme.breakpoints.down("md")]: {
 
-
+       
     display: 'grid',
     ' & img': {
-
+        margin: ' 0 auto',
+        width:'100px',
+        height:'200px',
+        borderRadius:'0'
     }
 
   }
@@ -520,6 +533,7 @@ const About = () => {
           <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
             <CardActionArea>
               <CardMedia style={{ width: '450px' }}
+
                 component="img"
                 height="200"
 

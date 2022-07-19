@@ -29,7 +29,7 @@ const Footer = () => {
                  <span class="footer-cat">Careers</span>
              </div>
              <ul class="footer-cat-links">
-                 <li><a href=""><span>Terms Of Use</span></a></li>
+                 <li><a style={{}} href=""><span>Terms Of Use</span></a></li>
                  <li><a href=""><span>Booking Conditions</span></a></li>
                  <li><a href=""><span>ECommerce</span></a></li>
                  <li><a href=""><span>Privacy Policy</span></a></li>

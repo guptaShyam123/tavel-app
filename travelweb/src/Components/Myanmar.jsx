@@ -164,9 +164,11 @@ const Styleimo = styled("div")(({ theme }) => ({
            margin:' 0 auto',
            marginLeft:'-13px',
            marginRight:'13px'
-        }
+        
+          }
     
       },
+        
       [theme.breakpoints.only("lg")]: {
         margin:' 0 auto',
       
@@ -191,9 +193,7 @@ const Styleimo = styled("div")(({ theme }) => ({
                         margin: '0 auto'
                       }
                   
-                    },
-        
-
+                                    },
   }))
   const Styleop = styled("div")(({ theme }) => ({
  marginTop:'30px'
@@ -334,7 +334,7 @@ const myanmar = () => {
         <CardMedia  style={{ width: '450px' }}
           component="img"
           height="200"
-
+         
           image="https://images.unsplash.com/photo-1590498418987-aa4e1e0d2b94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fG15YW5tYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           alt="green iguana"
         />

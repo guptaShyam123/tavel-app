@@ -476,8 +476,10 @@ const Stylethi = styled("div")(({ theme }) => ({
                       <center><p style={{fontSize:'20px' , color:''}}>You can register here</p></center>
                       <Styleppts >
 
-                       
+                    
+                      
                         <Stylelll>
+                    
                           <label>Name</label>
                           <input  type="text" />
                         </Stylelll>
@@ -536,7 +538,8 @@ const Stylethi = styled("div")(({ theme }) => ({
                       <div style={{ marginTop: '10px', display: 'flex', fontSize: '15px', alignItems: 'center', justifyContent: 'center' }}>
                         <div style={{ marginTop: '20px', display: 'grid', marginLeft: '10px' }}>
                           <Button variant="contained"  sx={{ boxShadow: 4, width: '20vw', backgroundColor: '#26a69a' ,color: 'white', fontWeight: 'bolder' }}>Submit</Button>
-                        </div>
+                    
+                          </div>
                       </div>
 
                            

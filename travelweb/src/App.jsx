@@ -16,13 +16,14 @@ import Thailand from './Components/Thailand'
 import Footer from './Components/Footer'
 import Agenthub2 from './Components/Agenthub2'
 import Youtubeclone from './Components/Youtubeclone'
+import Groups1 from './Components/Groups1'
 
 const App = () => {
   return (
     <>
    
 
-    <Japan/>
+    <About/>
 
 
     </>

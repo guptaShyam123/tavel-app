@@ -17,10 +17,11 @@ const Styleim = styled("div")(({ theme }) => ({
     marginTop:'30px',
 
     
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.between("lg" , 'md')]: {
         margin:' 0 auto',
       
               '& img': {
+                marginTop:'20px'
               }
           
             },
@@ -328,7 +329,7 @@ const Thailand = () => {
     <div style={{marginTop:'20px'}}>
     <Styleimo>
 
-    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
+    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4  , backgroundColor:'lightgray' }}>
       <CardActionArea>
         <CardMedia  style={{ width: '450px' }}
           component="img"
@@ -346,7 +347,7 @@ const Thailand = () => {
       </CardActionArea>
     </Card>
 
-    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
+    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 , backgroundColor:'lightgray'}}>
       <CardActionArea>
         <CardMedia style={{ width: '450px' }}
           component="img"
@@ -365,7 +366,7 @@ const Thailand = () => {
     </Card>
 
 
-    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
+    <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 , backgroundColor:'lightgray' }}>
       <CardActionArea>
         <CardMedia style={{ width: '450px' }}
           component="img"

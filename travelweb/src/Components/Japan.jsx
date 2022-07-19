@@ -349,19 +349,26 @@ const japan = () => {
     <Card sx={{ borderRadius: '20px ', maxWidth: 345, marginTop: '40px', boxShadow: 4 }}>
       <CardActionArea>
         <CardMedia style={{ width: '450px' }}
+
           component="img"
           height="200"
 
           image="https://images.unsplash.com/photo-1580355275559-10c832e123f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxqYXBhbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
           alt="green iguana"
         />
+        
         <CardContent>
-          <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
-            CAMBODIA
-          </Typography>
+       
+       
+        <Typography gutterBottom variant="h5" style={{ color: 'gray', fontWeight: 'bolder' }} component="div">
+       
+        CAMBODIA
+      
+        </Typography>
 
         </CardContent>
-      </CardActionArea>
+      
+        </CardActionArea>
     </Card>
 
 

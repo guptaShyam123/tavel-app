@@ -7,6 +7,7 @@ import { AppBar, Button } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import './Footer.css'
 
 
 
@@ -14,7 +15,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 const StyledAppbar = styled(AppBar)(({ theme }) => ({
 
   height: '10vh',
-  backgroundColor: 'white',
+  backgroundColor: 'transparent',
 
 
 }));
@@ -24,7 +25,7 @@ const StyleLink = styled("div")(({ theme }) => ({
   marginLeft: '30px',
   marginTop: '-25px',
   ' & h1': {
-    color: 'black',
+    color: 'white',
     fontSize: '50px',
 
   }
@@ -38,7 +39,7 @@ const Stylepara = styled("div")(({ theme }) => ({
   marginLeft: '40vh',
   display: 'flex',
   ' & button ': {
-    color: 'black',
+    color: 'white',
     marginLeft: '10px',
     height: '30px',
     cursor: 'pointer',
@@ -62,7 +63,7 @@ const StyleLiss = styled("div")(({ theme }) => ({
 
   },
   ' & p': {
-    display: 'flex', margin: '20px', marginLeft: '16vw', fontSize: '24px', fontFamily: 'Raleway , sans-serif', marginTop: '30px', color: 'black',
+    display: 'flex', alignItems: 'center', justifyContent:'center', marginRight:'25vw',marginLeft:'25vw',  fontSize: '20px', fontFamily: 'Raleway , sans-serif', marginTop: '30px', color: 'black',
   },
 
   ' & img': {
@@ -74,14 +75,17 @@ const StyleLiss = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     height: '100%',
     width: '100%',
-    display: '0 auto',
+    
 
     '  & p': {
 
-      justifyContent: 'center',
-      alignItems: 'center',
-
+      
+      fontSize:'20px',
+        margin:'0 auto',
       marginTop: '40px',
+      marginLeft:'70px',
+      marginRight:'70px',
+      
     },
 
     ' & h2': {
@@ -110,15 +114,15 @@ const Imglist = styled("div")(({ theme }) => ({
 
   [theme.breakpoints.down("md")]: {
     display: 'grid',
-    marginLeft: '-30px',
-
-
+  marginTop:'40px',
+  marginLeft:'-30px',
+     
     '& img': {
-
-      width: '90%',
-      height: '200px'
-
-
+     margin:'0 auto',
+      width: '100%',
+      height: '100%',
+     
+      
     }
 
   },
@@ -179,15 +183,29 @@ const Styleh = styled("div")(({ theme }) => ({
   textAlign: 'center',
   fontFmaily: 'Railway , sans-serif',
   fontSize: '14px',
-  color: '#5e6163'
+  color: '#5e6163',
+
+  [theme.breakpoints.down("md")]:{
+
+     '& h1':{
+        fontSize:'20px',
+        marginTop:'30px'
+        
+     }
+  }
 
 }))
 
 const Stylepp = styled("div")(({ theme }) => ({
   textAlign: 'center',
-  fontFmaily: 'Railway , sans-serif',
-  fontSize: '14px',
-  color: 'black',
+ 
+
+  ' & p':{
+fontSize:'22px',
+textAlign: 'center', justifyContent: 'center',
+color:'#444',
+fontFmaily: 'Railway , sans-serif',
+  },
 
   [theme.breakpoints.down("lg")]: {
 
@@ -200,8 +218,18 @@ const Stylepp = styled("div")(({ theme }) => ({
     }
 
   },
-
-
+ 
+  [theme.breakpoints.down("md")]:{
+     ' & p':{
+      margin:' 0 auto',
+      alignItems: 'center',
+      fontSize:'22px',
+      marginLeft:'20px',
+      marginRight:'20px',
+      marginTop:'30px'
+     }
+  }
+ 
 }))
 
 const Styleinp = styled("div")(({ theme }) => ({
@@ -218,7 +246,7 @@ const Styleinp = styled("div")(({ theme }) => ({
 
 const Stylevv = styled("div")(({ theme }) => ({
 
-
+   top:0,
   [theme.breakpoints.down("md")]: {
 
     ' & video': {
@@ -266,7 +294,7 @@ const StyleImage = styled("div")(({ theme }) => ({
 
 }))
 
-const StyledButton = styled("button")(({ theme }) => ({
+const StyleButton = styled("button")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -287,8 +315,12 @@ const StyledButton = styled("button")(({ theme }) => ({
 
   [theme.breakpoints.down("md")]: {
 
-    marginTop: '50px'
-
+    ' & button':{
+    marginTop: '80px',
+    margin:'0 auto',
+   fontSize:'50px'
+    }
+    
 
   }
 
@@ -331,10 +363,10 @@ const Home = () => {
 
 
           width: '100%',
-          marginTop: '20px'
+          
         }} autoPlay loop muted>
-          <source src="https://www.exotravel.com/assets/img/video/Website_Background_%283%29_%285%29.mp4" type="video/mp4" />
-
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-travel-between-two-mountains-above-a-river-34164-large.mp4" type="video/mp4" />
+          
         </video></center>
 
       </Stylevv>
@@ -347,11 +379,11 @@ const Home = () => {
         <img style={{ height: '80px', width: '80px', }} src="https://www.exotravel.com/assets/img/top-page/icon-place-we-love.svg" />
       </center>
       <StyleLiss>
-        <h2 style={{}}>HOME TOUR</h2>
+        <center><h2 style={{}}>HOME TOUR</h2></center>
         <hr style={{ width: '17vw' }}></hr>
-        <p>Here at EXO, we're all travellers at heart. This is reflected in the exciting and immersive range of tours across Asia we've meticulously crafted. Here's a shortlist of tours we're especially proud of to fuel some wanderlust.</p>
+        <p>Here at ROVE, we're all travellers at heart. This is reflected in the exciting and immersive range of tours across Asia we've meticulously crafted. Here's a shortlist of tours we're especially proud of to fuel some wanderlust.</p>
 
-
+            
         <Imglist >
 
           <img style={{ marginLeft: '30px' }}
@@ -370,7 +402,7 @@ const Home = () => {
         </Imglist>
 
         <Imglists >
-
+                            
           <img style={{ marginLeft: '30px' }}
             src="https://images.unsplash.com/photo-1516815231560-8f41ec531527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGJlYWNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
 
@@ -387,22 +419,87 @@ const Home = () => {
                 
         </Imglists>
 
-        <center><StyledButton>
+        <center><StyleButton>
           CHECK
-        </StyledButton>
+        </StyleButton>
         </center>
 
         <Styleh><h1>SUBSCRIBE TO OUR HOME PAGE</h1></Styleh>
         <Stylepp>
-          <p>The world of EXO Travel is always evolving. Stay in touch and we'll keep you up to speed!</p>
+          <p>The world of ROVE Travel is always evolving. Stay in touch and we'll keep you up to speed!</p>
         </Stylepp>
 
-        <Styleinp style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px' }}>
-          <input type="text" placeholder='Enter Your Email' />
-            
-        </Styleinp>
+       
 
       </StyleLiss>
+
+      <footer>
+      <div>
+           <span class="logo">ROVE</span>
+      </div>
+  
+      <div class="row">
+           <div class="col-3">                
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Solution</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href=""><span>The EXO Travel Story</span></a></li>
+                   <li><a href=""><span>EXO PEOPLE</span></a></li>
+                   <li><a href=""><span>EXO VALUES</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Careers</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a style={{}} href=""><span>Terms Of Use</span></a></li>
+                   <li><a href=""><span>Booking Conditions</span></a></li>
+                   <li><a href=""><span>ECommerce</span></a></li>
+                   <li><a href=""><span>Privacy Policy</span></a></li>
+                   <li><a href=""><span>Club</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Follow us</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href=""><span>Facebook</span></a></li>
+                   <li><a href=""><span>Twitter</span></a></li>
+                   <li><a href=""><span>Linkdin</span></a></li>
+                   <li><a href=""><span>Instagram</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3" id="newsletter">
+               <span>Stay Connected</span>
+               <form id="subscribe">
+                   <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                   <input type="submit" value="Subscribe" id="btn-scribe"/>
+               </form>
+               
+               <div class="social-links social-2">
+                
+               </div>
+  
+               <div id="address">
+                   
+               </div>
+               
+           </div>
+         
+      </div>
+      <div id="copyright">
+          &copy; 2000-22 EXO TRAVEL ALL RIGHTS RESERVED
+      </div>
+      <div id="owner">
+        
+      </div>
+   </footer>
 
     </>
 
