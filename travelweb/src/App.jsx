@@ -17,13 +17,15 @@ import Footer from './Components/Footer'
 import Agenthub2 from './Components/Agenthub2'
 import Youtubeclone from './Components/Youtubeclone'
 import Groups1 from './Components/Groups1'
+import Adventures from './Components/Adventures'
+import Ecom from './Components/Ecom'
 
 const App = () => {
   return (
     <>
    
 
-    <About/>
+    <Tour/>
 
 
     </>

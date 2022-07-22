@@ -28,6 +28,13 @@ const StyleLink = styled("div")(({ theme }) => ({
     color: 'white',
     fontSize: '50px',
 
+  },
+
+  ' & img':{
+    height:'100px', width:'110px',
+    marginLeft:'-10px',
+    marginTop:'15px'
+  
   }
 
 }));
@@ -63,7 +70,7 @@ const StyleLiss = styled("div")(({ theme }) => ({
 
   },
   ' & p': {
-    display: 'flex', alignItems: 'center', justifyContent:'center', marginRight:'25vw',marginLeft:'25vw',  fontSize: '20px', fontFamily: 'Raleway , sans-serif', marginTop: '30px', color: 'black',
+    display: 'flex', alignItems: 'center', justifyContent:'center', marginRight:'250px',marginLeft:'250px',  fontSize: '20px', fontFamily: 'Raleway , sans-serif', marginTop: '30px', color: '#444',
   },
 
   ' & img': {
@@ -332,7 +339,7 @@ const Home = () => {
 
       <StyledAppbar>
         <StyleLink>
-          <h1>EXO</h1>
+        <img src="https://rovecartsofficial.co/wp-content/uploads/2020/12/rove.png"/>
           <Stylepara>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>DESTINATIONS</button>
 
@@ -376,7 +383,7 @@ const Home = () => {
       <center>
 
 
-        <img style={{ height: '80px', width: '80px', }} src="https://www.exotravel.com/assets/img/top-page/icon-place-we-love.svg" />
+        <img style={{ height: '80px', width: '80px', marginTop:'20px'}} src="https://www.exotravel.com/assets/img/top-page/icon-place-we-love.svg" />
       </center>
       <StyleLiss>
         <center><h2 style={{}}>HOME TOUR</h2></center>

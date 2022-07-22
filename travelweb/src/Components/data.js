@@ -19,12 +19,9 @@ export const data = [
         name: 'laos',
         title: 'This is ',
 
+
     },
 
-
-]
-
-export const dataone = [
     {
         id: 1,
         img: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
@@ -48,9 +45,6 @@ export const dataone = [
 
     },
 
-]
-
-export const datasec = [
     {
         id: 1,
         img: 'https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFzaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
@@ -72,4 +66,6 @@ export const datasec = [
         title: 'This is ',
 
     },
+
+
 ]

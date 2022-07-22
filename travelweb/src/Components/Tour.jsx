@@ -14,8 +14,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia'
 import ShareIcon from '@mui/icons-material/Share';
 import { data } from './data'
-import { dataone } from './data'
-import { datasec } from './data'
+
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
@@ -39,6 +38,13 @@ const StyleLink = styled("div")(({ theme }) => ({
     color: 'black',
     fontSize: '50px',
 
+  },
+  
+  ' & img':{
+    height:'100px', width:'110px',
+    marginLeft:'-10px',
+    marginTop:'15px'
+  
   }
 
 }));
@@ -221,7 +227,7 @@ const SelectCard = styled("div")(({ theme }) => ({
 }))
 
 const Stylediv = styled("div")(({ theme }) => ({
-  width: '120px', backgroundColor: '#80b157', marginLeft: '20px', height: '37px', display: 'flex', borderRadius: '2px 2px',
+  width: '120px', backgroundColor: '#80b157', marginLeft: '25px', height: '37px', display: 'flex', borderRadius: '2px 2px',
 
   '  & p ': {
     color: 'black', marginLeft: '10px', marginTop: '10px'
@@ -240,53 +246,25 @@ const Stylediv = styled("div")(({ theme }) => ({
 
 const SelectCardsa = styled("div")(({ theme }) => ({
 
-  display: 'flex',
+  display: 'inline-grid',
+  gridTemplateColumns:'auto auto auto',
   justifyContent: 'center',
   alignItems: 'center',
   marginTop: '50px',
+  gridGap:'20px',
 
 
   [theme.breakpoints.down("md")]: {
-    marginRight: '60px',
+    
 
-    display: 'grid',
-    ' & Card ': {
-      height: '100px',
-      width: '100px',
-      padding: '10px',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginRight: '-60px'
-    }
+    display: 'flex',
+   flexDirection:'column'    
+    
+    
   }
 
 }))
 
-const StyleCardsec = styled("div")(({ theme }) => ({
-
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginTop: '30px',
-
-
-  [theme.breakpoints.down("md")]: {
-    marginRight: '70px',
-    marginLef:'70px',
-
-    display: 'grid',
-    ' & Card ': {
-      height: '100px',
-      width: '100px',
-      padding: '20px',
-       
-      justifyContent: 'center',
-      alignItems: 'center',
-      
-    }
-  }
-
-}))
 
 
 const StyleTypography = styled("div")(({ theme }) => ({
@@ -377,7 +355,7 @@ const Stylesearch = styled("div")(({ theme }) => ({
     fontWeight: 'normal',
     fontFamily: 'Railway sans-serif',
     fontSize: '20px',
-    border: '0px',
+    border: '1px solid black',
     marginTop: '40px',
     backgroundColor: '',
     color: 'black',
@@ -427,7 +405,7 @@ const Tour = () => {
       <StyledAppbar>
 
         <StyleLink>
-          <h1>EXO</h1>
+        <img src="https://rovecartsofficial.co/wp-content/uploads/2020/12/rove.png"/>
           <Stylepara>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>DESTINATIONS</button>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>TOUR STYLES</button>
@@ -438,7 +416,7 @@ const Tour = () => {
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>EVENTS</button>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>RESPONSIBLE</button>
             <button style={{ backgroundColor: 'transparent', border: 'none' }}>BLOG</button>
-            <button style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: 'green' }}>ENQUIRE</button>
+            <button style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: '#18ffff' }}>ENQUIRE</button>
             <SearchIcon className='search' />
             <button className="a" style={{ backgroundColor: 'transparent', border: 'none', backgroundColor: '', width: '120px' }}>AGENT HUB</button>
           </Stylepara>
@@ -484,7 +462,7 @@ const Tour = () => {
 
 
 
-      <SelectCardsa>
+      <center><SelectCardsa>
         {data.filter(datas => datas.name.toLocaleLowerCase().includes(query)).map((datas) => (
 
 
@@ -526,6 +504,7 @@ const Tour = () => {
 
         ))}
       </SelectCardsa>
+      </center>
 
 
 
@@ -533,85 +512,6 @@ const Tour = () => {
 
 
 
-
-      <Stylesss>
-
-        {dataone.filter(datas => datas.name.toLocaleLowerCase().includes(query)).map((datas) => (
-
-          <>
-
-            <Card sx={{ maxWidth: 345, boxShadow: 'none', marginLeft: '80px' }}>
-              <CardMedia
-
-                component="img"
-                height="140"
-                img src={datas.img}
-                alt="green iguana" />
-              <CardContent>
-                <p gutterBottom variant="h5" component="div">
-                  18 DAYS / 17 NIGHTS
-                    
-                </p>
-                <hr></hr>
-                <p style={{ fontWeight: 'normal', fontSize: '20px' }}>{datas.name}</p>
-              </CardContent>
-              <CardActions>
-                <Button style={{ backgroundColor: '#bdbfbf', color: 'white', width: '120px' }}>VIEW TOUR</Button>
-
-
-                <Stylediv>
-                  <ShareIcon  style={{ fontSize: '25px', marginTop: '5px' }} />
-                  <p  >
-                    SHARE
-                  </p>
-
-                </Stylediv>
-
-              </CardActions>
-            </Card>
-          </>
-        ))}
-
-      </Stylesss>
-
-      <StyleCardsec>
-        {datasec.filter(datas => datas.name.toLocaleLowerCase().includes(query)).map((datas) => (
-
-          <>
-
-            <Card sx={{ maxWidth: 345, boxShadow: 'none', marginLeft: '80px' }}>
-              <CardMedia
-
-                component="img"
-                height="140"
-                img src={datas.img}
-                alt="green iguana" />
-              <CardContent>
-                <p gutterBottom variant="h5" component="div">
-                  18 DAYS / 17 NIGHTS
-
-                </p>
-                <hr></hr>
-                <p style={{ fontWeight: 'normal', fontSize: '20px' }}>{datas.name}</p>
-              </CardContent>
-              <CardActions>
-                <Button style={{ backgroundColor: '#bdbfbf', color: 'white', width: '120px' }}>VIEW TOUR</Button>
-
-
-                <Stylediv>
-                  <ShareIcon style={{ fontSize: '25px', marginTop: '5px' }} />
-                  <p  >
-                    SHARE
-                  </p>
-
-                </Stylediv>
-
-              </CardActions>
-            </Card>
-          </>
-        ))}
-
-      </StyleCardsec>
 
 
       <StyleTypography>
@@ -629,6 +529,74 @@ const Tour = () => {
       </StyleTypography>
 
 
+      <footer style={{marginTop:'20px'}}>
+      <div>
+           <span class="logo">ROVE</span>
+      </div>
+  
+      <div class="row">
+           <div class="col-3">                
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Solution</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href=""><span>The EXO Travel Story</span></a></li>
+                   <li><a href=""><span>EXO PEOPLE</span></a></li>
+                   <li><a href=""><span>EXO VALUES</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Careers</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a style={{}} href=""><span>Terms Of Use</span></a></li>
+                   <li><a href=""><span>Booking Conditions</span></a></li>
+                   <li><a href=""><span>ECommerce</span></a></li>
+                   <li><a href=""><span>Privacy Policy</span></a></li>
+                   <li><a href=""><span>Club</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Follow us</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href=""><span>Facebook</span></a></li>
+                   <li><a href=""><span>Twitter</span></a></li>
+                   <li><a href=""><span>Linkdin</span></a></li>
+                   <li><a href=""><span>Instagram</span></a></li>
+               </ul>
+           </div>
+           <div class="col-3" id="newsletter">
+               <span>Stay Connected</span>
+               <form id="subscribe">
+                   <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                   <input type="submit" value="Subscribe" id="btn-scribe"/>
+               </form>
+               
+               <div class="social-links social-2">
+                
+               </div>
+  
+               <div id="address">
+                   
+               </div>
+               
+           </div>
+         
+      </div>
+      <div id="copyright">
+          &copy; 2000-22 EXO TRAVEL ALL RIGHTS RESERVED
+      </div>
+      <div id="owner">
+        
+      </div>
+   </footer>
+  
 
 
     </>
